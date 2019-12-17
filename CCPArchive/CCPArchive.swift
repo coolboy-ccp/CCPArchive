@@ -79,7 +79,7 @@ public class CCPArchive {
             while FileManager.default.fileExists(atPath: result.path) {
                 needAppend = false
                 if override {  return result }
-                let lastPath = result.lastPathComponent.replacingOccurrences(of: ".", with: "_\(append).")
+                let lastPath = sourceFileName.replacingOccurrences(of: ".", with: "_\(append).")
                 result = result.deletingLastPathComponent().appendingPathComponent(lastPath)
                 append += 1
             }
@@ -174,7 +174,7 @@ public class CCPArchive {
                     if errno == ENOSPC {
                         throw ZipError.other(desURL.path, "打开文件失败")
                     }
-                    unzGoToNextFile(zip)
+                    rlt = unzGoToNextFile(zip)
                     continue
                 }
                 while true {
