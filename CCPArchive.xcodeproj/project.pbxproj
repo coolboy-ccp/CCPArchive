@@ -10,6 +10,22 @@
 		003C3DE523A3962D005D3EDC /* CCPArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C3DDB23A3962D005D3EDC /* CCPArchive.framework */; };
 		003C3DEA23A3962D005D3EDC /* CCPArchiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3DE923A3962D005D3EDC /* CCPArchiveTests.swift */; };
 		003C3DEC23A3962D005D3EDC /* CCPArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C3DDE23A3962D005D3EDC /* CCPArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003C3DFE23A3964F005D3EDC /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 003C3DF623A3964F005D3EDC /* unzip.c */; };
+		003C3DFF23A3964F005D3EDC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 003C3DF723A3964F005D3EDC /* zip.c */; };
+		003C3E0023A3964F005D3EDC /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 003C3DF823A3964F005D3EDC /* ioapi.c */; };
+		003C3E0123A3964F005D3EDC /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C3DF923A3964F005D3EDC /* crypt.h */; };
+		003C3E0223A3964F005D3EDC /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C3DFA23A3964F005D3EDC /* zip.h */; };
+		003C3E0323A3964F005D3EDC /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C3DFB23A3964F005D3EDC /* unzip.h */; };
+		003C3E0423A3964F005D3EDC /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C3DFD23A3964F005D3EDC /* ioapi.h */; };
+		003C3E0723A3969B005D3EDC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C3E0623A39692005D3EDC /* libz.tbd */; };
+		003C3E0923A396C4005D3EDC /* CCPArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E0823A396C4005D3EDC /* CCPArchive.swift */; };
+		003C3E0A23A396C6005D3EDC /* CCPArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E0823A396C4005D3EDC /* CCPArchive.swift */; };
+		003C3E0C23A3975F005D3EDC /* CCPArchiveError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E0B23A3975F005D3EDC /* CCPArchiveError.swift */; };
+		003C3E0D23A3975F005D3EDC /* CCPArchiveError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E0B23A3975F005D3EDC /* CCPArchiveError.swift */; };
+		003C3E0F23A39777005D3EDC /* CCPArchiveFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E0E23A39777005D3EDC /* CCPArchiveFileHandler.swift */; };
+		003C3E1023A39777005D3EDC /* CCPArchiveFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E0E23A39777005D3EDC /* CCPArchiveFileHandler.swift */; };
+		003C3E1223A397AF005D3EDC /* CCPArchiveUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E1123A397AF005D3EDC /* CCPArchiveUtil.swift */; };
+		003C3E1323A397AF005D3EDC /* CCPArchiveUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C3E1123A397AF005D3EDC /* CCPArchiveUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,19 @@
 		003C3DE423A3962D005D3EDC /* CCPArchiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCPArchiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		003C3DE923A3962D005D3EDC /* CCPArchiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPArchiveTests.swift; sourceTree = "<group>"; };
 		003C3DEB23A3962D005D3EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003C3DF623A3964F005D3EDC /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		003C3DF723A3964F005D3EDC /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		003C3DF823A3964F005D3EDC /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		003C3DF923A3964F005D3EDC /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		003C3DFA23A3964F005D3EDC /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		003C3DFB23A3964F005D3EDC /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		003C3DFC23A3964F005D3EDC /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		003C3DFD23A3964F005D3EDC /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		003C3E0623A39692005D3EDC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		003C3E0823A396C4005D3EDC /* CCPArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPArchive.swift; sourceTree = "<group>"; };
+		003C3E0B23A3975F005D3EDC /* CCPArchiveError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPArchiveError.swift; sourceTree = "<group>"; };
+		003C3E0E23A39777005D3EDC /* CCPArchiveFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPArchiveFileHandler.swift; sourceTree = "<group>"; };
+		003C3E1123A397AF005D3EDC /* CCPArchiveUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPArchiveUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C3E0723A3969B005D3EDC /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +86,7 @@
 				003C3DDD23A3962D005D3EDC /* CCPArchive */,
 				003C3DE823A3962D005D3EDC /* CCPArchiveTests */,
 				003C3DDC23A3962D005D3EDC /* Products */,
+				003C3E0523A39692005D3EDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +102,12 @@
 		003C3DDD23A3962D005D3EDC /* CCPArchive */ = {
 			isa = PBXGroup;
 			children = (
+				003C3DF523A3964F005D3EDC /* minizip */,
 				003C3DDE23A3962D005D3EDC /* CCPArchive.h */,
+				003C3E0823A396C4005D3EDC /* CCPArchive.swift */,
+				003C3E0B23A3975F005D3EDC /* CCPArchiveError.swift */,
+				003C3E0E23A39777005D3EDC /* CCPArchiveFileHandler.swift */,
+				003C3E1123A397AF005D3EDC /* CCPArchiveUtil.swift */,
 				003C3DDF23A3962D005D3EDC /* Info.plist */,
 			);
 			path = CCPArchive;
@@ -86,6 +122,29 @@
 			path = CCPArchiveTests;
 			sourceTree = "<group>";
 		};
+		003C3DF523A3964F005D3EDC /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				003C3DF623A3964F005D3EDC /* unzip.c */,
+				003C3DF723A3964F005D3EDC /* zip.c */,
+				003C3DF823A3964F005D3EDC /* ioapi.c */,
+				003C3DF923A3964F005D3EDC /* crypt.h */,
+				003C3DFA23A3964F005D3EDC /* zip.h */,
+				003C3DFB23A3964F005D3EDC /* unzip.h */,
+				003C3DFC23A3964F005D3EDC /* module.modulemap */,
+				003C3DFD23A3964F005D3EDC /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		003C3E0523A39692005D3EDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003C3E0623A39692005D3EDC /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +152,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C3E0223A3964F005D3EDC /* zip.h in Headers */,
 				003C3DEC23A3962D005D3EDC /* CCPArchive.h in Headers */,
+				003C3E0123A3964F005D3EDC /* crypt.h in Headers */,
+				003C3E0323A3964F005D3EDC /* unzip.h in Headers */,
+				003C3E0423A3964F005D3EDC /* ioapi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +211,7 @@
 				TargetAttributes = {
 					003C3DDA23A3962D005D3EDC = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					003C3DE323A3962D005D3EDC = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C3E0F23A39777005D3EDC /* CCPArchiveFileHandler.swift in Sources */,
+				003C3E0023A3964F005D3EDC /* ioapi.c in Sources */,
+				003C3DFE23A3964F005D3EDC /* unzip.c in Sources */,
+				003C3E1223A397AF005D3EDC /* CCPArchiveUtil.swift in Sources */,
+				003C3DFF23A3964F005D3EDC /* zip.c in Sources */,
+				003C3E0C23A3975F005D3EDC /* CCPArchiveError.swift in Sources */,
+				003C3E0923A396C4005D3EDC /* CCPArchive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C3E0D23A3975F005D3EDC /* CCPArchiveError.swift in Sources */,
 				003C3DEA23A3962D005D3EDC /* CCPArchiveTests.swift in Sources */,
+				003C3E1023A39777005D3EDC /* CCPArchiveFileHandler.swift in Sources */,
+				003C3E1323A397AF005D3EDC /* CCPArchiveUtil.swift in Sources */,
+				003C3E0A23A396C6005D3EDC /* CCPArchive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +415,7 @@
 		003C3DF023A3962D005D3EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -347,6 +423,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CCPArchive/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +432,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ccp.CCPArchive;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CCPArchive/minizip";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +442,7 @@
 		003C3DF123A3962D005D3EDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -370,6 +450,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CCPArchive/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ccp.CCPArchive;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CCPArchive/minizip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,6 +468,7 @@
 		003C3DF323A3962D005D3EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CCPArchiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +486,7 @@
 		003C3DF423A3962D005D3EDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CCPArchiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

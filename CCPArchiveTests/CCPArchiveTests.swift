@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Foundation
 @testable import CCPArchive
 
 class CCPArchiveTests: XCTestCase {
@@ -28,6 +29,24 @@ class CCPArchiveTests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+        }
+    }
+    
+    func testUnzipFile() {
+        //   /Users/chuchengpeng/Desktop/data.json.zip
+        do {
+            try CCPArchive.unzip(soruce: "/Users/chuchengpeng/Desktop/data.json.zip")
+        } catch {
+            print(error.localizedDescription)
+            assertionFailure(error.localizedDescription)
+        }
+    }
+    
+    func testUnzipDirectory() {
+        do {
+            try CCPArchive.unzip(soruce: "/Users/chuchengpeng/Desktop/csr文件.zip")
+        } catch {
+            assertionFailure(error.localizedDescription)
         }
     }
 
